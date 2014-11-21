@@ -1,0 +1,27 @@
+<html>
+
+<body>
+
+<canvas id="the_canvas" width="800" height="800"></canvas>
+
+<script>
+
+var box = prompt("How many boxes would you like to see?");
+
+var canvas = document.getElementById("the_canvas");
+var ctx = canvas.getContext("2d");
+var col = ["olive", "rgb(100,33,211)", "#DD9993"]
+
+
+
+
+for (count = 0;count <= box; count ++){
+  ctx.fillStyle = col[Math.floor((Math.random())*3)]
+  ctx.fillRect((Math.random())*800,(Math.random())*800,80,80)
+}
+
+
+
+</script>
+</body>
+</html>
